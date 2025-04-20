@@ -1,60 +1,76 @@
-# Miscellaneous
-*.class
-*.log
-*.pyc
-*.swp
-.DS_Store
-.atom/
-.buildlog/
-.history
-.svn/
-*~
-
-# IntelliJ related
-*.iml
-*.ipr
-*.iws
-.idea/
-
 # Flutter/Dart/Pub related
-**/doc/api/
-**/ios/Flutter/.last_build_id
-.pub-cache/
-.pub/
-
-# Web related
-lib/generated_plugin_registrant.dart
-
-# Symbolication related
-app.*.symbols
-
-# Obfuscation related
-app.*.map.json
-
-# Arquivos e diretórios gerados pelo Dart
 .dart_tool/
+.packages
+.pub-cache/
+build/
 .flutter-plugins
 .flutter-plugins-dependencies
-.packages
+.fvm/
+.melos_tool/
 
-# Diretório de build
-/build/
-
-# Arquivos de configuração pessoais
+# IDEs
+.idea/
 .vscode/
+*.iml
 
-# Arquivos de chaves de API, segredos, etc.
-.env
+# Android
+android/.gradle/
+android/captures/
+android/.idea/
+android/local.properties
+android/**/gradle-wrapper.properties
 
-# Diretórios de build específicos do sistema operacional
-# /android/
-/ios/
-/linux/
-/macos/
-# /web/
-/windows/
+# iOS
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+ios/.symlinks/
+ios/Pods/
+ios/.dart_tool/
+ios/Flutter/Generated.xcconfig
+ios/Runner.xcworkspace/
+ios/Runner.xcodeproj/project.xcworkspace/
+ios/Runner.xcodeproj/xcuserdata/
 
-# Android Studio will place build artifacts here
-/android/app/debug
-/android/app/profile
-/android/app/release
+# macOS
+macos/Flutter/GeneratedPluginRegistrant.swift
+macos/Pods/
+macos/.symlinks/
+macos/.dart_tool/
+macos/Flutter/ephemeral/
+macos/Flutter/GeneratedPluginRegistrant.swift
+
+# Linux
+linux/flutter/ephemeral/
+linux/CMakeFiles/
+linux/cmake-build-*/
+
+# Windows
+windows/flutter/ephemeral/
+windows/Runner.sln
+windows/Runner.vcxproj.user
+windows/CMakeFiles/
+windows/cmake-build-*/
+
+# Web
+web/.dart_tool/
+web/.idea/
+
+# Other files
+*.log
+*.tmp
+*.lock
+*.swp
+*.DS_Store
+*.bak
+*.orig
+
+# Symbolic links (optional)
+symlinks/
+
+# Firebase/Secrets (adicionar manualmente se usar)
+# .env
+# google-services.json
+# GoogleService-Info.plist
+
+# Coverage
+coverage/
