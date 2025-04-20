@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'password_generator_page.dart';
+import 'package:password/home_page.dart';
 import 'splash_screen.dart';
 
 void main() {
@@ -14,16 +13,14 @@ class PasswordGeneratorApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(
-        primarySwatch: Colors.green,
-        primaryColor: Colors.green[900],
-        scaffoldBackgroundColor: Colors.green[900],
+        brightness: Brightness.dark,
+        fontFamily: 'JetBrainsMono',
       ),
       debugShowCheckedModeBanner: false,
       initialRoute: '/',
       routes: {
         '/': (context) => const SplashScreen(),
-        '/home': (context) =>
-            const PasswordGeneratorPage(), // Sua tela principal
+        '/home': (context) => const HomePage(), // Sua tela principal
       },
     );
   }

@@ -47,10 +47,11 @@ app.*.map.json
 .env
 
 # Diretórios de build específicos do sistema operacional
+# /android/
 /ios/
 /linux/
 /macos/
-/web/
+# /web/
 /windows/
 
 # Android Studio will place build artifacts here

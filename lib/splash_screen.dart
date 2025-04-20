@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import 'dart:async';
 
+import 'package:password/colors.dart';
+
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
 
   @override
-  _SplashScreenState createState() => _SplashScreenState();
+  State<SplashScreen> createState() => _SplashScreenState();
 }
 
 class _SplashScreenState extends State<SplashScreen> {
@@ -19,20 +21,20 @@ class _SplashScreenState extends State<SplashScreen> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.green[900], // Cor de fundo
-      body: const Center(
+    return const Scaffold(
+      backgroundColor: AppColors.background,
+      body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             Icon(
               Icons.password,
               size: 150,
-              color: Colors.green,
-            ), // Logo
+              color: AppColors.switchActive,
+            ),
             CircularProgressIndicator(
-              color: Colors.green,
-            ), // Indicador de carregamento
+              color: AppColors.switchActive,
+            ),
           ],
         ),
       ),
