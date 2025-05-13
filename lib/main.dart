@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:password/home_page.dart';
-import 'splash_screen.dart';
 
 void main() {
   runApp(const PasswordGeneratorApp());
@@ -17,9 +16,8 @@ class PasswordGeneratorApp extends StatelessWidget {
         fontFamily: 'JetBrainsMono',
       ),
       debugShowCheckedModeBanner: false,
-      initialRoute: '/',
+      initialRoute: '/home',
       routes: {
-        '/': (context) => const SplashScreen(),
         '/home': (context) => const HomePage(), // Sua tela principal
       },
     );
