@@ -16,14 +16,10 @@ class PasswordGeneratorApp extends StatelessWidget {
     return MaterialApp(
       title: title,
       theme: ThemeData(
-        brightness: Brightness.light,
-        fontFamily: 'JetBrainsMono',
-      ),
-      darkTheme: ThemeData(
         brightness: Brightness.dark,
         fontFamily: 'JetBrainsMono',
       ),
-      themeMode: ThemeMode.system,
+      themeMode: ThemeMode.dark,
       debugShowCheckedModeBanner: false,
       initialRoute: AppRoutes.home,
       routes: {
