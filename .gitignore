@@ -67,13 +67,17 @@ web/.idea/
 # Symbolic links (optional)
 symlinks/
 
-# Firebase/Secrets (adicionar manualmente se usar)
-# .env
-# google-services.json
-# GoogleService-Info.plist
+# Firebase/Secrets
+.env
+.env.*
+**/google-services.json
+**/GoogleService-Info.plist
+lib/firebase_options.dart
+
+# Android signing
+android/key.properties
+*.jks
+*.keystore
 
 # Coverage
 coverage/
-
-# Firebase generated files (optional, dependendo da configuração)
-lib/firebase_options.dart
