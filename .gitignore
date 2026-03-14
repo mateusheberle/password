@@ -74,3 +74,6 @@ symlinks/
 
 # Coverage
 coverage/
+
+# Firebase generated files (optional, dependendo da configuração)
+lib/firebase_options.dart
