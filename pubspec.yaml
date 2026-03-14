@@ -8,10 +8,13 @@ environment:
 
 dependencies:
   device_preview: ^1.2.0
+  firebase_core: ^4.5.0
+  firebase_crashlytics: ^5.0.8
   flutter:
     sdk: flutter
   flutter_native_splash: ^2.4.6
   path_provider: ^2.0.11
+  
 
 dev_dependencies:
   flutter_test:
